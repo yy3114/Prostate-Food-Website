@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>攝護腺健康食品指南</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        details summary {
+            cursor: pointer;
+            padding: 1rem 1.25rem; /* Added horizontal padding */
+            font-weight: 600;
+            font-size: 1.25rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Lighter border for contrast */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px; /* Rounded corners for summary */
+            transition: background-color 0.2s ease-in-out;
+        }
+        details summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            transition: transform 0.2s;
+            color: inherit; /* Inherit color from summary */
+        }
+        details[open] summary::after {
+            content: '-';
+            transform: rotate(0deg);
+        }
+        details[open] summary {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom: none; /* No border when open */
+        }
+        details div {
+            padding: 1rem 1.25rem; /* Added horizontal padding */
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for content */
+        }
+        h1 {
+            color: #1a202c;
+        }
+        h2 {
+            color: #2d3748;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 1.25rem;
+            padding-left: 0.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .disclaimer {
+            background-color: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            color: #78350f;
+        }
+
+        /* Custom color schemes for details sections */
+        .color-scheme-1 summary {
+            background-color: #e0f2fe; /* Light Blue */
+            color: #0b69b3; /* Darker Blue */
+        }
+        .color-scheme-1 summary:hover {
+            background-color: #bfdbfe; /* Lighter Blue on hover */
+        }
+        .color-scheme-1 div {
+            background-color: #f8fafc; /* Very Light Blue-Gray */
+            color: #334155; /* Dark Gray-Blue */
+        }
+
+        .color-scheme-2 summary {
+            background-color: #d1fae5; /* Light Green */
+            color: #0d9488; /* Teal */
+        }
+        .color-scheme-2 summary:hover {
+            background-color: #a7f3d0; /* Lighter Green on hover */
+        }
+        .color-scheme-2 div {
+            background-color: #f0fdf4; /* Very Light Green */
+            color: #10b981; /* Green */
+        }
+
+        .color-scheme-3 summary {
+            background-color: #fef3c7; /* Light Yellow */
+            color: #d97706; /* Orange */
+        }
+        .color-scheme-3 summary:hover {
+            background-color: #fde68a; /* Lighter Yellow on hover */
+        }
+        .color-scheme-3 div {
+            background-color: #fffbeb; /* Very Light Yellow */
+            color: #a16207; /* Darker Orange */
+        }
+
+        .color-scheme-4 summary {
+            background-color: #fee2e2; /* Light Red */
+            color: #dc2626; /* Red */
+        }
+        .color-scheme-4 summary:hover {
+            background-color: #fecaca; /* Lighter Red on hover */
+        }
+        .color-scheme-4 div {
+            background-color: #fffafa; /* Very Light Red */
+            color: #b91c1c; /* Darker Red */
+        }
+
+        .color-scheme-5 summary {
+            background-color: #e9d5ff; /* Light Purple */
+            color: #9333ea; /* Purple */
+        }
+        .color-scheme-5 summary:hover {
+            background-color: #d8b4fe; /* Lighter Purple on hover */
+        }
+        .color-scheme-5 div {
+            background-color: #faf5ff; /* Very Light Purple */
+            color: #7e22ce; /* Darker Purple */
+        }
+    </style>
+</head>
+<body class="p-4">
+    <div class="container">
+        <h1 class="text-3xl font-bold text-center mb-6">攝護腺健康食品指南</h1>
+        <p class="text-center mb-8 text-gray-600">
+            本頁面提供對攝護腺健康有益的食物和常見保健品成分資訊。<br>點擊每個區塊的標題可展開詳情。
+        </p>
+
+        <h2 class="text-2xl font-semibold mb-4">有益攝護腺健康的食物</h2>
+        <hr class="mb-4">
+
+        <!-- 茄紅素 -->
+        <details class="mb-4 rounded-lg overflow-hidden color-scheme-1">
+            <summary>
+                茄紅素 (Lycopene)
+            </summary>
+            <div>
+                <p class="mb-2">茄紅素是一種強效的天然抗氧化劑，有助於保護攝護腺細胞，降低氧化損傷的風險。</p>
+                <p class="font-semibold">主要食物來源：</p>
+                <ul class="list-disc ml-6">
+                    <li><strong>番茄及番茄製品：</strong> 煮熟或加工後的番茄（如番茄醬、番茄泥）比生番茄更容易被人體吸收。</li>
+                    <li><strong>西瓜、紅心芭樂、木瓜、葡萄柚、紅甜椒、櫻桃。</strong></li>
+                </ul>
+            </div>
+        </details>
+
+        <!-- 鋅 -->
+        <details class="mb-4 rounded-lg overflow-hidden color-scheme-2">
+            <summary>
+                鋅 (Zinc)
+            </summary>
+            <div>
+                <p class="mb-2">鋅是攝護腺正常功能所必需的微量元素，對於維持攝護腺健康至關重要。</p>
+                <p class="font-semibold">主要食物來源：</p>
+                <ul class="list-disc ml-6">
+                    <li><strong>牡蠣、海鮮：</strong> 特別是貝類海鮮。</li>
+                    <li><strong>南瓜籽、堅果類：</strong> 南瓜籽是優質的植物性鋅來源。</li>
+                    <li><strong>瘦肉、蛋黃、全穀類。</strong></li>
+                </ul>
+            </div>
+        </details>
+
+        <!-- 硒 -->
+        <details class="mb-4 rounded-lg overflow-hidden color-scheme-3">
+            <summary>
+                硒 (Selenium)
+            </summary>
+            <div>
+                <p class="mb-2">硒是一種抗氧化礦物質，有助於保護細胞免受自由基損害，對攝護腺健康有益。</p>
+                <p class="font-semibold">主要食物來源：</p>
+                <ul class="list-disc ml-6">
+                    <li><strong>大蒜、洋蔥、綠花椰菜、香菇。</strong></li>
+                    <li><strong>全穀物、啤酒酵母粉。</strong></li>
+                    <li><strong>鮪魚、鯡魚等魚類。</strong></li>
+                </ul>
+            </div>
+        </details>
+
+        <!-- Omega-3 脂肪酸 -->
+        <details class="mb-4 rounded-lg overflow-hidden color-scheme-4">
+            <summary>
+                Omega-3 脂肪酸 (Omega-3 Fatty Acids)
+            </summary>
+            <div>
+                <p class="mb-2">Omega-3 脂肪酸具有抗發炎的特性，有助於減少體內發炎反應，對攝護腺健康有益。</p>
+                <p class="font-semibold">主要食物來源：</p>
+                <ul class="list-disc ml-6">
+                    <li><strong>深海魚類：</strong> 鮭魚、鯖魚、沙丁魚。</li>
+                    <li><strong>亞麻籽、奇亞籽、核桃。</strong></li>
+                </ul>
+            </div>
+        </details>
+
+        <!-- 植物固醇 -->
+        <details class="mb-4 rounded-lg overflow-hidden color-scheme-5">
+            <summary>
+                植物固醇 (Phytosterols)
+            </summary>
+            <div>
+                <p class="mb-2">植物固醇有助於維持攝護腺組織的健康，並可能影響荷爾蒙代謝。</p>
+                <p class="font-semibold">主要食物來源：</p>
+                <ul class="list-disc ml-6">
+                    <li><strong>南瓜籽、黃豆及黃豆製品（如豆腐、豆漿）。</strong></li>
+                    <li><strong>花椰菜、花生、胡蘿蔔。</strong></li>
+                </ul>
+            </div>
+        </details>
+
+        <h2 class="text-2xl font-semibold mb-4 mt-8">常見攝護腺保健品成分</h2>
+        <hr class="mb-4">
+
+        <!-- 鋸棕櫚 -->
+        <details class="mb-4 rounded-lg overflow-hidden color-scheme-1">
+            <summary>
+                鋸棕櫚 (Saw Palmetto)
+            </summary>
+            <div>
+                <p>鋸棕櫚萃取物是男性攝護腺保健中最常見的成分之一，被認為可以幫助維持攝護腺健康，並可能改善因攝護腺肥大引起的排尿問題，如頻尿、夜尿等。</p>
+            </div>
+        </details>
+
+        <!-- 南瓜籽油/萃取物 -->
+        <details class="mb-4 rounded-lg overflow-hidden color-scheme-2">
+            <summary>
+                南瓜籽油/萃取物 (Pumpkin Seed Oil/Extract)
+            </summary>
+            <div>
+                <p>南瓜籽油富含不飽和脂肪酸、鋅和植物固醇，有助於改善膀胱功能和尿道健康，對於緩解排尿不適有幫助。</p>
+            </div>
+        </details>
+
+        <!-- 非洲李樹皮萃取物 -->
+        <details class="mb-4 rounded-lg overflow-hidden color-scheme-3">
+            <summary>
+                非洲李樹皮萃取物 (Pygeum Africanum Extract)
+            </summary>
+            <div>
+                <p>非洲李樹皮萃取物含有植物固醇，被認為有助於減少攝護腺發炎和腫脹，改善排尿流速和減少夜尿次數。</p>
+            </div>
+        </details>
+
+        <!-- 蕁麻根萃取物 -->
+        <details class="mb-4 rounded-lg overflow-hidden color-scheme-4">
+            <summary>
+                蕁麻根萃取物 (Nettle Root Extract)
+            </summary>
+            <div>
+                <p>蕁麻根萃取物常與鋸棕櫚搭配使用，有助於緩解攝護腺肥大引起的泌尿道症狀，例如改善排尿困難和頻尿。</p>
+            </div>
+        </details>
+
+        <h2 class="text-2xl font-semibold mb-4 mt-8">生活習慣建議</h2>
+        <hr class="mb-4">
+
+        <details class="mb-4 rounded-lg overflow-hidden color-scheme-5">
+            <summary>
+                更多攝護腺保養建議
+            </summary>
+            <div>
+                <ul class="list-disc ml-6">
+                    <li><strong>均衡飲食：</strong> 多吃蔬菜水果，減少高脂肪、高熱量和加工食品。</li>
+                    <li><strong>充足水分：</strong> 每天飲用足夠的水，但睡前避免大量飲水以減少夜尿。</li>
+                    <li><strong>避免刺激性食物：</strong> 減少辛辣食物、濃茶、咖啡和酒精的攝取。</li>
+                    <li><strong>規律運動：</strong> 保持適度運動，避免長時間久坐或騎腳踏車。</li>
+                    <li><strong>定期檢查：</strong> 尤其是50歲以上男性，建議定期進行攝護腺健康檢查。</li>
+                </ul>
+            </div>
+        </details>
+
+        <div class="disclaimer mt-8">
+            <p class="font-bold mb-2">重要提醒：</p>
+            <p>本頁面提供的資訊僅供參考，不能取代專業醫療建議。若您有任何攝護腺相關的健康問題或症狀，請務必諮詢泌尿科醫師，以獲得正確的診斷和治療。</p>
+        </div>
+    </div>
+
+    <script>
+        // Get all details elements
+        const detailsElements = document.querySelectorAll('details');
+
+        // Add event listener to each details element
+        detailsElements.forEach(details => {
+            details.addEventListener('toggle', (event) => {
+                // If the current details element is being opened
+                if (event.target.open) {
+                    // Iterate through all other details elements
+                    detailsElements.forEach(otherDetails => {
+                        // If another details element is open and it's not the current one, close it
+                        if (otherDetails !== event.target && otherDetails.open) {
+                            otherDetails.open = false;
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
